@@ -1,4 +1,9 @@
-FROM ubuntu:latest
-LABEL authors="leopoldomanfio"
+FROM golang:1.16-alpine
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY . .
+
+RUN go build -o taxcalculator .
+
+ENTRYPOINT ["./taxcalculator"]
