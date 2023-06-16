@@ -8,9 +8,7 @@ import (
 )
 
 func main() {
-	// Define command-line flags
 	inputFlag := flag.String("input", "", "Input data in JSON format please")
-	flag.Parse()
 
 	// Check for input
 	if *inputFlag == "" {

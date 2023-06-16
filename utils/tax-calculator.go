@@ -4,7 +4,6 @@ type Order struct {
 	Operation string  `json:"operation"`
 	UnitCost  float64 `json:"unit-cost"`
 	Quantity  int     `json:"quantity"`
-	Tax       float64 `json:"tax,omitempty"`
 }
 
 type TaxResponse struct {
